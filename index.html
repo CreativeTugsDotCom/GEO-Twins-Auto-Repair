@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO Twins Auto Repair | Independent Auto Repair Shop in Sunset Park, Brooklyn, NY</title>
+  <meta name="description" content="GEO Twins Auto Repair in Sunset Park, Brooklyn NY. Expert auto maintenance, engine diagnostics, brake repair, tire service, suspension & A/C repair. Call (929) 705-8514.">
+  <meta name="keywords" content="auto repair Brooklyn, mechanic Sunset Park, brake repair 11220, engine diagnostics Brooklyn, GEO Twins Auto Repair">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080B0F',
+              card: '#111620',
+              cardHover: '#18202E',
+              border: '#232D3F',
+              red: '#FF2E4C',
+              redHover: '#E61E38',
+              redGlow: 'rgba(255, 46, 76, 0.4)',
+              gold: '#FFB020',
+              grayMuted: '#94A3B8',
+              silver: '#E2E8F0'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Rajdhani', 'sans-serif'],
+          },
+          boxShadow: {
+            'red-glow': '0 0 25px -5px rgba(255, 46, 76, 0.5)',
+            'card-glow': '0 10px 30px -10px rgba(0, 0, 0, 0.7)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080B0F;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #232D3F;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FF2E4C;
+    }
+
+    /* Carbon Texture & Metallic Gradients */
+    .bg-carbon {
+      background-color: #080B0F;
+      background-image: radial-gradient(#1e293b 0.75px, transparent 0.75px), radial-gradient(#1e293b 0.75px, #080B0F 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+
+    .metallic-border {
+      position: relative;
+    }
+    .metallic-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.03) 50%, rgba(255,46,76,0.3) 100%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .red-gradient-text {
+      background: linear-gradient(135deg, #FFFFFF 30%, #FF2E4C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Scroll animations */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Pulse animation for active badges */
+    @keyframes statusPulse {
+      0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+      70% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+    }
+    .status-pulse {
+      animation: statusPulse 2s infinite;
+    }
+  </style>
+
+  <!-- Structured Data / Local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "GEO Twins Auto Repair",
+    "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80",
+    "@id": "https://maps.google.com/?cid=735550234955866141",
+    "url": "https://geotwinsauto.auto-repair.shop/home",
+    "telephone": "+19297058514",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "251 47th St #253",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "postalCode": "11220",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.6517,
+      "longitude": -74.0092
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "48"
+    }
+  }
+  </script>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-brand-red selection:text-white">
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-dark/80 backdrop-blur-md border-b border-white/5 py-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- LOGO -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <img src="image_78dee7.jpg" alt="GEO Twins Auto Repair Logo" class="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="#home" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">Home</a>
+          <a href="#about" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">About</a>
+          <a href="#services" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">Services</a>
+          <a href="#why-us" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">Why Choose Us</a>
+          <a href="#reviews" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">Reviews</a>
+          <a href="#contact" class="text-sm font-medium text-slate-200 hover:text-brand-red transition-colors">Contact</a>
+        </nav>
+
+        <!-- RIGHT CTA BUTTONS -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="tel:9297058514" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 text-white font-medium text-sm transition-all hover:border-brand-red/50">
+            <i class="fa-solid fa-phone text-brand-red text-xs"></i>
+            <span>(929) 705-8514</span>
+          </a>
+          <a href="#contact" onclick="openBookingModal()" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-brand-red hover:bg-brand-redHover text-white font-semibold text-sm transition-all shadow-red-glow hover:scale-[1.02] active:scale-[0.98]">
+            <i class="fa-solid fa-calendar-check text-xs"></i>
+            <span>Book Service</span>
+          </a>
+        </div>
+
+        <!-- MOBILE HAMBURGER BUTTON -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <a href="tel:9297058514" class="p-2.5 rounded-lg bg-brand-red text-white text-sm flex items-center justify-center font-bold" aria-label="Call Now">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <button id="mobileMenuBtn" type="button" class="p-2.5 rounded-lg border border-white/10 bg-white/5 text-slate-200 hover:text-white" aria-label="Toggle menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-brand-card border-b border-brand-border px-4 pt-4 pb-6 transition-all duration-300">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">Home</a>
+        <a href="#about" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">About</a>
+        <a href="#services" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">Services</a>
+        <a href="#why-us" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">Why Choose Us</a>
+        <a href="#reviews" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">Reviews</a>
+        <a href="#contact" class="mobile-nav-link text-base font-medium text-slate-200 hover:text-brand-red py-2 border-b border-white/5">Contact</a>
+        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+          <a href="tel:9297058514" class="w-full justify-center inline-flex items-center gap-2 px-4 py-3 rounded-lg border border-white/10 bg-white/5 text-white font-semibold text-center">
+            <i class="fa-solid fa-phone text-brand-red"></i> Call (929) 705-8514
+          </a>
+          <button onclick="openBookingModal()" class="w-full justify-center inline-flex items-center gap-2 px-4 py-3 rounded-lg bg-brand-red text-white font-semibold text-center shadow-red-glow">
+            <i class="fa-solid fa-calendar-check"></i> Book Your Service
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative min-h-screen flex items-center pt-28 pb-16 bg-carbon overflow-hidden">
+    <!-- HERO BACKGROUND IMAGE & GRADIENT OVERLAYS -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2000&q=80" alt="Automotive Workshop Mechanic" class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity scale-105 animate-pulse" style="animation-duration: 10s;">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-dark/60"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-brand-dark/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-8 space-y-6">
+          
+          <!-- EYEBROW BADGE -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-brand-red/30 bg-brand-red/10 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-brand-red status-pulse"></span>
+            <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+              TRUSTED AUTO REPAIR IN BROOKLYN
+            </span>
+          </div>
+
+          <!-- MAIN HEADLINE -->
+          <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight text-white leading-[1.1]">
+            Your Car Deserves <br>
+            <span class="red-gradient-text">Expert Care.</span>
+          </h1>
+
+          <!-- SUPPORTING TEXT -->
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed">
+            Reliable automotive maintenance, diagnostics and repairs for drivers throughout Sunset Park and Brooklyn. Honest service, clear communication and quality workmanship.
+          </p>
+
+          <!-- CALL TO ACTION BUTTONS -->
+          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <button onclick="openBookingModal()" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-lg uppercase tracking-wider transition-all shadow-red-glow hover:scale-[1.02] active:scale-[0.98]">
+              <i class="fa-solid fa-wrench"></i>
+              <span>Book Your Service</span>
+            </button>
+            <a href="tel:9297058514" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-heading font-bold text-lg uppercase tracking-wider transition-all backdrop-blur-sm hover:border-brand-red/50">
+              <i class="fa-solid fa-phone text-brand-red"></i>
+              <span>Call (929) 705-8514</span>
+            </a>
+          </div>
+
+          <!-- TRUST ROW -->
+          <div class="pt-6 border-t border-white/10 flex flex-wrap items-center gap-y-3 gap-x-6 text-sm text-slate-300">
+            <div class="flex items-center gap-1.5 text-brand-gold font-bold">
+              <div class="flex text-brand-gold text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="text-white ml-1">5.0 Customer Rating</span>
+            </div>
+            <span class="hidden sm:inline text-white/20">•</span>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-brand-red"></i>
+              <span>Honest Service</span>
+            </div>
+            <span class="hidden sm:inline text-white/20">•</span>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-brand-red"></i>
+              <span>Professional Repairs</span>
+            </div>
+            <span class="hidden sm:inline text-white/20">•</span>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-brand-red"></i>
+              <span>Sunset Park Experts</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT QUICK STATUS / BOOKING PREVIEW CARD -->
+        <div class="lg:col-span-4">
+          <div class="bg-brand-card/90 backdrop-blur-xl border border-brand-border rounded-2xl p-6 shadow-2xl metallic-border space-y-5">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <p class="text-xs font-heading font-semibold text-brand-grayMuted uppercase tracking-wider">Shop Status</p>
+                <div id="liveShopStatus" class="flex items-center gap-2 mt-1">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 status-pulse"></span>
+                  <span class="text-sm font-bold text-white">OPEN TODAY</span>
+                </div>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded bg-white/5 border border-white/10 text-slate-300 font-mono">
+                8:00 AM – 6:00 PM
+              </span>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="text-white font-medium">Sunset Park Location</p>
+                  <p class="text-slate-400 text-xs">251 47th St #253, Brooklyn, NY 11220</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-red/10 text-brand-red flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-car-side"></i>
+                </div>
+                <div>
+                  <p class="text-white font-medium">All Makes & Models</p>
+                  <p class="text-slate-400 text-xs">Domestic, Asian & European Vehicles</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://maps.google.com/?cid=735550234955866141" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-semibold tracking-wider uppercase transition-colors">
+                <i class="fa-solid fa-directions text-brand-red"></i>
+                Get Directions on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SUBTLE SCROLL INDICATOR -->
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 opacity-70 hover:opacity-100 transition-opacity">
+      <span class="text-[10px] font-heading font-semibold tracking-widest text-slate-400 uppercase">SCROLL</span>
+      <div class="w-5 h-9 rounded-full border-2 border-white/20 flex justify-center pt-1">
+        <div class="w-1 h-2 bg-brand-red rounded-full animate-bounce"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK TRUST BAR -->
+  <section class="border-y border-brand-border bg-brand-card/60 backdrop-blur-md relative z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-xl shrink-0 shadow-inner">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-white text-base tracking-wide uppercase">Full-Service Auto Repair</h3>
+            <p class="text-slate-400 text-xs">Complete vehicle maintenance</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-xl shrink-0 shadow-inner">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-white text-base tracking-wide uppercase">Honest Recommendations</h3>
+            <p class="text-slate-400 text-xs">No forced or fake upsells</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-xl shrink-0 shadow-inner">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-white text-base tracking-wide uppercase">Experienced Technicians</h3>
+            <p class="text-slate-400 text-xs">Skilled & detailed work</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-xl shrink-0 shadow-inner">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-white text-base tracking-wide uppercase">Serving Brooklyn Drivers</h3>
+            <p class="text-slate-400 text-xs">Sunset Park neighborhood shop</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-24 bg-brand-dark relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- LEFT: IMAGE WITH STYLISH METALLIC BADGES -->
+        <div class="lg:col-span-6 relative reveal-on-scroll">
+          <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl group">
+            <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=1200&q=80" alt="Mechanic Inspecting Engine" class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80"></div>
+            
+            <!-- OVERLAY FLOATING BADGE -->
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-brand-dark/90 backdrop-blur-md border border-white/10 flex items-center justify-between">
+              <div>
+                <p class="font-heading font-bold text-white text-lg">Independent & Local</p>
+                <p class="text-slate-400 text-xs">Serving Sunset Park & Surrounding Neighborhoods</p>
+              </div>
+              <div class="w-10 h-10 rounded-full bg-brand-red/20 text-brand-red flex items-center justify-center font-bold">
+                <i class="fa-solid fa-check"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUBTLE BACKGROUND DESIGN ELEMENTS -->
+          <div class="absolute -top-6 -left-6 w-24 h-24 bg-brand-red/10 rounded-full blur-2xl pointer-events-none"></div>
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="lg:col-span-6 space-y-6 reveal-on-scroll">
+          <div>
+            <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+              ABOUT GEO TWINS
+            </span>
+            <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-2 leading-tight">
+              Honest Auto Repair. <br>
+              <span class="text-slate-400">Built Around Your Trust.</span>
+            </h2>
+          </div>
+
+          <p class="text-slate-300 text-base leading-relaxed">
+            GEO Twins Auto Repair is an independent full-service repair shop serving drivers in Brooklyn's Sunset Park neighborhood. We work on a wide range of vehicle makes and models, providing everything from routine maintenance to diagnostics and mechanical repairs.
+          </p>
+
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Our approach is simple: explain the problem clearly, recommend what your vehicle actually needs, and get the job done right. No convoluted jargon, no hidden fees—just dependable automotive care from local mechanics who care.
+          </p>
+
+          <!-- 3 FEATURE POINTS -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red flex items-center justify-center text-xs shrink-0 font-bold">✓</div>
+              <span class="text-slate-200 font-semibold text-sm sm:text-base">Clear explanations before any work begins</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red flex items-center justify-center text-xs shrink-0 font-bold">✓</div>
+              <span class="text-slate-200 font-semibold text-sm sm:text-base">Quality workmanship on every single repair</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 rounded-full bg-brand-red/20 text-brand-red flex items-center justify-center text-xs shrink-0 font-bold">✓</div>
+              <span class="text-slate-200 font-semibold text-sm sm:text-base">Reliable service that keeps you coming back</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="pt-4">
+            <a href="#contact" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl border border-brand-red text-brand-red hover:bg-brand-red hover:text-white font-heading font-bold text-sm tracking-wider uppercase transition-all shadow-md">
+              <span>Learn More About Us</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-24 bg-carbon border-y border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- HEADER -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+          WHAT WE DO
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-2">
+          Complete Auto Care, <br class="hidden sm:inline">All Under One Roof.
+        </h2>
+        <p class="text-slate-400 mt-4 text-base">
+          From routine maintenance to complex mechanical repairs, our team helps keep your vehicle safe, reliable and road-ready.
+        </p>
+      </div>
+
+      <!-- SERVICE CARDS GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- CARD 1 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-oil-can"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Oil Changes & Maintenance
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Keep your vehicle running smoothly with routine maintenance, synthetic oil changes, filter replacements, and scheduled factory service.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Oil Changes & Maintenance', 'Comprehensive synthetic oil changes, oil filter replacement, fluid check & top-offs, air filter replacement, and multi-point vehicle safety inspection.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Engine Diagnostics & Repair
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Accurate computer diagnostics and dependable repairs when your check-engine light comes on or performance degrades.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Engine Diagnostics & Repair', 'Advanced OBD-II computer scanning, sensor replacements, check engine light diagnosis, spark plug replacement, ignition coil fixes, and deep engine repair.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-disc-drive"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Brake Service
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Complete brake inspections, pad and rotor replacements, caliper repairs, and fluid flushes to help keep you and your passengers safe.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Brake Service', 'Brake pad replacement, ceramic/metallic pads, brake rotor resurfacing & replacement, brake line inspection, ABS troubleshooting, and hydraulic brake fluid flush.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Tire & Wheel Service
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Professional tire rotation, wheel balancing, flat repair, and mounting for maximum safety, handling, and fuel efficiency.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Tire & Wheel Service', 'Tire installation, precision computer wheel balancing, tire rotation, puncture repair, TPMS sensor programming, and tread depth check.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-car-tunnel"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Suspension & Steering
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Repair worn shocks, struts, ball joints, control arms, and tie rods for a smoother, safer, and responsive ride across Brooklyn streets.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Suspension & Steering', 'Shock and strut assembly replacement, tie rod ends, sway bar links, power steering pump repair, wheel alignment checks, and control arm bushing fixes.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Heating & A/C
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Keep your cabin comfortable year-round with heating and air-conditioning system inspection, refrigerant recharge, and compressor repair.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Heating & A/C', 'A/C refrigerant leak test and recharge (R134a/R1234yf), heater core service, compressor replacement, blower motor repairs, and climate control diagnostics.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-temperature-arrow-down"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              Cooling System
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Cooling-system inspection, radiator repair, thermostat replacement, and coolant flushes to help prevent engine overheating.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('Cooling System', 'Radiator replacement, water pump repair, thermostat replacement, cooling fan repair, hose inspection, and pressurized cooling system flush.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="bg-brand-card hover:bg-brand-cardHover border border-brand-border rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-red/50 shadow-lg group flex flex-col justify-between reveal-on-scroll">
+          <div>
+            <div class="w-14 h-14 rounded-xl bg-brand-dark border border-brand-border flex items-center justify-center text-brand-red text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-red group-hover:text-white transition-all shadow-inner">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide group-hover:text-brand-red transition-colors">
+              General Mechanical Repair
+            </h3>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+              Dependable mechanical repairs for a wide range of vehicle makes and models including alternator, starter, battery, and drive belt replacements.
+            </p>
+          </div>
+          <button onclick="openServiceDetail('General Mechanical Repair', 'Alternator replacement, starter motor fix, battery testing and installation, serpentine belts, timing belt replacement, exhaust fixes, and general troubleshooting.')" class="mt-6 text-xs font-heading font-bold tracking-widest text-brand-red group-hover:text-white uppercase flex items-center gap-2">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MID-PAGE CTA / AUTOMOTIVE BANNER -->
+  <section class="relative py-20 overflow-hidden">
+    <!-- BACKGROUND IMAGE WITH OVERLAYS -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=2000&q=80" alt="Auto Workshop Garage" class="w-full h-full object-cover object-center opacity-25">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/80"></div>
+      <div class="absolute inset-0 border-y border-brand-red/20"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-4">
+          <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+            EXPERT VEHICLE DIAGNOSTICS
+          </span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight">
+            Something Doesn't Feel Right? <br>
+            <span class="red-gradient-text">Let's Take a Look.</span>
+          </h2>
+          <p class="text-slate-300 text-base max-w-2xl">
+            Don't wait for a small noise or light to become a costly breakdown. Bring your vehicle in and let GEO Twins Auto Repair accurately diagnose the issue.
+          </p>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-4 justify-center">
+          <button onclick="openBookingModal()" class="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-base uppercase tracking-wider transition-all shadow-red-glow">
+            <i class="fa-solid fa-calendar-plus"></i>
+            <span>Book an Appointment</span>
+          </button>
+          <a href="tel:9297058514" class="w-full inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-heading font-bold text-base uppercase tracking-wider transition-all">
+            <i class="fa-solid fa-phone text-brand-red"></i>
+            <span>Call Now</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why-us" class="py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- HEADER -->
+      <div class="max-w-3xl mb-16 reveal-on-scroll">
+        <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+          WHY GEO TWINS
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-2">
+          The Difference Is <br>
+          <span class="text-slate-400">How We Treat You.</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- LEFT: 4 NUMBERED BENEFITS -->
+        <div class="lg:col-span-7 space-y-8 reveal-on-scroll">
+          
+          <div class="flex gap-6 items-start group">
+            <span class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-red/80 group-hover:text-brand-red transition-colors shrink-0 font-mono">
+              01
+            </span>
+            <div class="border-b border-brand-border pb-6 w-full">
+              <h3 class="font-heading font-bold text-xl sm:text-2xl text-white uppercase tracking-wide">
+                Honest Recommendations
+              </h3>
+              <p class="text-slate-400 text-sm sm:text-base mt-2 leading-relaxed">
+                We explain what your vehicle needs without pushing unnecessary repairs. You get straightforward assessments and transparent options.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start group">
+            <span class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-red/80 group-hover:text-brand-red transition-colors shrink-0 font-mono">
+              02
+            </span>
+            <div class="border-b border-brand-border pb-6 w-full">
+              <h3 class="font-heading font-bold text-xl sm:text-2xl text-white uppercase tracking-wide">
+                Professional Workmanship
+              </h3>
+              <p class="text-slate-400 text-sm sm:text-base mt-2 leading-relaxed">
+                Every repair is approached with care, attention to detail and a focus on doing the job properly the first time using quality components.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start group">
+            <span class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-red/80 group-hover:text-brand-red transition-colors shrink-0 font-mono">
+              03
+            </span>
+            <div class="border-b border-brand-border pb-6 w-full">
+              <h3 class="font-heading font-bold text-xl sm:text-2xl text-white uppercase tracking-wide">
+                Clear Communication
+              </h3>
+              <p class="text-slate-400 text-sm sm:text-base mt-2 leading-relaxed">
+                Stay informed about your vehicle, repair status and next steps. We give you full updates before starting any unexpected repair work.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6 items-start group">
+            <span class="font-heading font-extrabold text-3xl sm:text-4xl text-brand-red/80 group-hover:text-brand-red transition-colors shrink-0 font-mono">
+              04
+            </span>
+            <div class="pb-2 w-full">
+              <h3 class="font-heading font-bold text-xl sm:text-2xl text-white uppercase tracking-wide">
+                Local & Independent
+              </h3>
+              <p class="text-slate-400 text-sm sm:text-base mt-2 leading-relaxed">
+                A neighborhood repair shop focused on building long-term relationships with Brooklyn drivers, not corporate sales quotas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: VISUAL IMAGE -->
+        <div class="lg:col-span-5 reveal-on-scroll">
+          <div class="relative rounded-2xl overflow-hidden border border-brand-border shadow-2xl metallic-border group">
+            <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=1000&q=80" alt="Technician Inspecting Brake and Suspension" class="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-center bg-brand-dark/80 backdrop-blur-md p-4 rounded-xl border border-white/10">
+              <p class="font-heading font-bold text-white uppercase text-sm">Quality Guaranteed</p>
+              <p class="text-slate-400 text-xs mt-1">Sunset Park, Brooklyn • (929) 705-8514</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS / TESTIMONIALS SECTION -->
+  <section id="reviews" class="py-24 bg-carbon border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-on-scroll">
+        <div>
+          <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+            CUSTOMER REVIEWS
+          </span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-2">
+            Trusted By Brooklyn Drivers.
+          </h2>
+        </div>
+
+        <div class="mt-6 md:mt-0 flex items-center gap-4 bg-brand-card px-5 py-3 rounded-xl border border-brand-border">
+          <div class="text-center">
+            <div class="flex text-brand-gold text-base">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="font-heading font-bold text-white text-lg block">5.0 Rating</span>
+          </div>
+          <div class="h-8 w-px bg-white/10"></div>
+          <div class="text-xs text-slate-400">
+            Based on Google <br>Customer Reviews
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIAL CARDS GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- REVIEW 1 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col justify-between shadow-xl reveal-on-scroll hover:border-brand-red/30 transition-all">
+          <div class="space-y-4">
+            <div class="flex text-brand-gold text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic">
+              "Very honest and professional. They explained exactly what needed to be done without trying to oversell me. Fair pricing and fast turnaround."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/5 flex items-center justify-between mt-6">
+            <div>
+              <p class="font-heading font-bold text-white text-sm">Verified Customer</p>
+              <p class="text-slate-500 text-xs">Sunset Park Driver</p>
+            </div>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-slate-400 font-mono"><i class="fa-brands fa-google text-slate-300 mr-1"></i>Google</span>
+          </div>
+        </div>
+
+        <!-- REVIEW 2 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col justify-between shadow-xl reveal-on-scroll hover:border-brand-red/30 transition-all">
+          <div class="space-y-4">
+            <div class="flex text-brand-gold text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic">
+              "Great communication and reliable work. The brake repair was completed correctly and on schedule. Will definitely bring my car back here!"
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/5 flex items-center justify-between mt-6">
+            <div>
+              <p class="font-heading font-bold text-white text-sm">Verified Customer</p>
+              <p class="text-slate-500 text-xs">Brooklyn Resident</p>
+            </div>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-slate-400 font-mono"><i class="fa-brands fa-google text-slate-300 mr-1"></i>Google</span>
+          </div>
+        </div>
+
+        <!-- REVIEW 3 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 flex flex-col justify-between shadow-xl reveal-on-scroll hover:border-brand-red/30 transition-all">
+          <div class="space-y-4">
+            <div class="flex text-brand-gold text-sm">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-200 text-sm leading-relaxed italic">
+              "A trustworthy local shop that actually cares about its customers. Hard to find honest mechanics in NYC, but GEO Twins is the real deal."
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/5 flex items-center justify-between mt-6">
+            <div>
+              <p class="font-heading font-bold text-white text-sm">Verified Customer</p>
+              <p class="text-slate-500 text-xs">Brooklyn Driver</p>
+            </div>
+            <span class="text-xs px-2 py-1 bg-white/5 rounded text-slate-400 font-mono"><i class="fa-brands fa-google text-slate-300 mr-1"></i>Google</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA BELOW -->
+      <div class="text-center mt-12">
+        <a href="https://maps.google.com/?cid=735550234955866141" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-heading font-bold tracking-widest text-brand-red hover:text-white uppercase transition-colors">
+          <span>See What Our Customers Say On Google</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICE PROCESS -->
+  <section class="py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+          HOW IT WORKS
+        </span>
+        <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-white uppercase tracking-tight mt-2">
+          Simple 4-Step Repair Process
+        </h2>
+        <p class="text-slate-400 mt-3 text-base">
+          We keep the process transparent, simple, and stress-free from drop-off to drive-away.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        
+        <!-- STEP 1 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 relative z-10 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-brand-red text-white font-heading font-bold text-xl flex items-center justify-center mb-6 shadow-red-glow">
+            01
+          </div>
+          <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide">
+            Book Your Service
+          </h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Schedule your visit online or call our Sunset Park shop directly at (929) 705-8514.
+          </p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 relative z-10 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border text-brand-red font-heading font-bold text-xl flex items-center justify-center mb-6">
+            02
+          </div>
+          <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide">
+            Vehicle Inspection
+          </h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            Our experienced team performs a detailed inspection and runs computer diagnostics.
+          </p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 relative z-10 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border text-brand-red font-heading font-bold text-xl flex items-center justify-center mb-6">
+            03
+          </div>
+          <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide">
+            Clear Recommendation
+          </h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            We explain the necessary repairs clearly and provide honest pricing before starting.
+          </p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-6 relative z-10 reveal-on-scroll">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark border border-brand-border text-brand-red font-heading font-bold text-xl flex items-center justify-center mb-6">
+            04
+          </div>
+          <h3 class="font-heading font-bold text-xl text-white uppercase tracking-wide">
+            Quality Repair
+          </h3>
+          <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+            We complete the work professionally with quality parts and get you back on the road safely.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="py-20 bg-gradient-to-br from-brand-card via-brand-dark to-brand-card border-y border-brand-red/30 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+        READY TO GET BACK ON THE ROAD?
+      </span>
+      <h2 class="font-heading text-4xl sm:text-6xl font-extrabold text-white uppercase tracking-tight">
+        Let's Get Your Vehicle <br>
+        <span class="red-gradient-text">Running Right.</span>
+      </h2>
+      <p class="text-slate-300 text-lg max-w-2xl mx-auto">
+        Professional auto repair with honest recommendations and dependable service in Brooklyn.
+      </p>
+
+      <div class="text-slate-400 text-sm flex items-center justify-center gap-2 font-mono">
+        <i class="fa-solid fa-location-dot text-brand-red"></i>
+        <span>251 47th St #253, Brooklyn, NY 11220</span>
+      </div>
+
+      <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+        <button onclick="openBookingModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-lg uppercase tracking-wider transition-all shadow-red-glow">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Your Service</span>
+        </button>
+        <a href="tel:9297058514" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-heading font-bold text-lg uppercase tracking-wider transition-all">
+          <i class="fa-solid fa-phone text-brand-red"></i>
+          <span>Call (929) 705-8514</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-24 bg-carbon">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- LEFT: CONTACT INFO -->
+        <div class="lg:col-span-5 space-y-8 reveal-on-scroll">
+          <div>
+            <span class="text-xs font-heading font-bold tracking-widest text-brand-red uppercase">
+              GET IN TOUCH
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mt-2">
+              Visit Our Shop or Call Us Today.
+            </h2>
+          </div>
+
+          <div class="bg-brand-card border border-brand-border rounded-2xl p-6 space-y-6">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/20 text-brand-red flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-shop text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-white text-lg uppercase">GEO Twins Auto Repair</h3>
+                <p class="text-slate-400 text-sm mt-1">251 47th St #253<br>Brooklyn, NY 11220</p>
+                <p class="text-xs text-brand-red font-semibold mt-1">Sunset Park Neighborhood</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/20 text-brand-red flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-white text-lg uppercase">Direct Phone</h3>
+                <a href="tel:9297058514" class="text-brand-red hover:underline font-bold text-base block mt-1">
+                  (929) 705-8514
+                </a>
+                <p class="text-xs text-slate-400">Call for immediate service inquiries</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/20 text-brand-red flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-heading font-bold text-white text-lg uppercase">Hours of Operation</h3>
+                <p class="text-slate-300 text-sm mt-1">Monday–Saturday: <span class="font-semibold text-white">8:00 AM – 6:00 PM</span></p>
+                <p class="text-slate-400 text-sm">Sunday: <span class="text-brand-red font-semibold">Closed</span></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="tel:9297058514" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold uppercase tracking-wider text-sm transition-all text-center">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call Now</span>
+            </a>
+            <a href="https://maps.google.com/?cid=735550234955866141" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-white/20 bg-white/5 hover:bg-white/10 text-white font-heading font-bold uppercase tracking-wider text-sm transition-all text-center">
+              <i class="fa-solid fa-location-arrow text-brand-red"></i>
+              <span>Get Directions</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: CONTACT / BOOKING FORM -->
+        <div class="lg:col-span-7 reveal-on-scroll">
+          <div class="bg-brand-card border border-brand-border rounded-2xl p-6 sm:p-8 metallic-border shadow-2xl">
+            <div class="mb-6">
+              <h3 class="font-heading font-extrabold text-2xl text-white uppercase tracking-wide">
+                Request Service
+              </h3>
+              <p class="text-slate-400 text-sm mt-1">
+                Fill out the form below and our team will get back to you promptly to confirm your appointment.
+              </p>
+            </div>
+
+            <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Full Name *</label>
+                  <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Phone Number *</label>
+                  <input type="tel" required placeholder="(929) 000-0000" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Email Address</label>
+                  <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Vehicle Make & Model *</label>
+                  <input type="text" required placeholder="e.g. 2018 Toyota Camry" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Service Needed *</label>
+                  <select id="serviceSelect" required class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white focus:outline-none focus:border-brand-red text-sm transition-colors">
+                    <option value="">Select Service...</option>
+                    <option value="Oil Changes & Maintenance">Oil Changes & Maintenance</option>
+                    <option value="Engine Diagnostics & Repair">Engine Diagnostics & Repair</option>
+                    <option value="Brake Service">Brake Service</option>
+                    <option value="Tire & Wheel Service">Tire & Wheel Service</option>
+                    <option value="Suspension & Steering">Suspension & Steering</option>
+                    <option value="Heating & A/C">Heating & A/C</option>
+                    <option value="Cooling System">Cooling System</option>
+                    <option value="General Mechanical Repair">General Mechanical Repair</option>
+                    <option value="Other Diagnostic / Checkup">Other Diagnostic / Checkup</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Preferred Date</label>
+                  <input type="date" class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white focus:outline-none focus:border-brand-red text-sm transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-heading font-bold uppercase text-slate-300 mb-1">Message / Issue Description</label>
+                <textarea rows="3" placeholder="Describe any symptoms, noises, or requested services..." class="w-full px-4 py-3 rounded-lg bg-brand-dark border border-brand-border text-white placeholder-slate-500 focus:outline-none focus:border-brand-red text-sm transition-colors resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-base uppercase tracking-wider transition-all shadow-red-glow">
+                Request an Appointment
+              </button>
+
+              <p class="text-[11px] text-slate-400 text-center">
+                <i class="fa-solid fa-lock text-[10px] text-slate-400 mr-1"></i>
+                We'll use your information only to respond to your service request.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-border pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/5">
+        
+        <!-- LOGO & SUMMARY -->
+        <div class="lg:col-span-4 space-y-4">
+          <a href="#home" class="inline-block group">
+            <img src="image_78dee7.jpg" alt="GEO Twins Auto Repair Logo" class="h-12 sm:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
+          </a>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Reliable auto repair and maintenance for drivers throughout Brooklyn. Honest service. Professional repairs. Local experts you can depend on.
+          </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-sm tracking-wider">Navigation</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#home" class="hover:text-brand-red transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-brand-red transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">Services</a></li>
+            <li><a href="#why-us" class="hover:text-brand-red transition-colors">Why Choose Us</a></li>
+            <li><a href="#reviews" class="hover:text-brand-red transition-colors">Reviews</a></li>
+            <li><a href="#contact" class="hover:text-brand-red transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- SERVICES LINK -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-sm tracking-wider">Popular Services</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#services" class="hover:text-brand-red transition-colors">Oil Changes & Maintenance</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">Engine Diagnostics & Repair</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">Brake Service & Repair</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">Tire & Wheel Service</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">A/C & Heating Repair</a></li>
+            <li><a href="#services" class="hover:text-brand-red transition-colors">General Mechanical Repair</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT & LOCATION -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-white uppercase text-sm tracking-wider">Shop Address</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            251 47th St #253<br>
+            Brooklyn, NY 11220<br>
+            Sunset Park Neighborhood
+          </p>
+          <a href="tel:9297058514" class="text-sm font-bold text-brand-red hover:underline block pt-1">
+            (929) 705-8514
+          </a>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM FOOTER -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>© 2026 GEO Twins Auto Repair. All Rights Reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" onclick="alert('Privacy Policy: GEO Twins Auto Repair respects your privacy and protects your personal service request data.')" class="hover:text-white transition-colors">Privacy Policy</a>
+          <span class="text-slate-400">•</span>
+          <a href="#" onclick="alert('Terms of Service: Service quotes and diagnostics subject to vehicle inspection upon arrival.')" class="hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SERVICE DETAIL MODAL -->
+  <div id="serviceModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="bg-brand-card border border-brand-border rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl metallic-border">
+      <button onclick="closeServiceModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
+        <i class="fa-solid fa-xmark text-xl"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-xl bg-brand-red/10 border border-brand-red/20 text-brand-red flex items-center justify-center text-xl mb-4">
+        <i class="fa-solid fa-wrench"></i>
+      </div>
+
+      <h3 id="modalServiceTitle" class="font-heading font-extrabold text-2xl text-white uppercase tracking-wide">
+        Service Title
+      </h3>
+      
+      <p id="modalServiceDescription" class="text-slate-300 text-sm mt-3 leading-relaxed">
+        Service description details...
+      </p>
+
+      <div class="mt-6 pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+        <button onclick="selectServiceAndBook()" class="flex-1 py-3 rounded-xl bg-brand-red hover:bg-brand-redHover text-white font-heading font-bold text-xs uppercase tracking-wider transition-all">
+          Book This Service
+        </button>
+        <button onclick="closeServiceModal()" class="py-3 px-5 rounded-xl border border-white/10 text-slate-300 hover:text-white text-xs font-semibold">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOOKING CONFIRMATION TOAST -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-brand-card border border-brand-red text-white p-4 rounded-xl shadow-2xl flex items-center gap-3">
+    <div class="w-8 h-8 rounded-full bg-brand-red text-white flex items-center justify-center font-bold">✓</div>
+    <div>
+      <p class="font-heading font-bold text-sm">Appointment Requested!</p>
+      <p class="text-slate-400 text-xs">We will call you shortly at (929) 705-8514 to confirm.</p>
+    </div>
+  </div>
+
+  <script>
+    // Live Shop Operating Hours Logic
+    function updateShopStatus() {
+      const statusElement = document.getElementById('liveShopStatus');
+      if (!statusElement) return;
+
+      const now = new Date();
+      // NY Time Zone Offset handling
+      const day = now.getDay(); // 0 = Sun, 1 = Mon ... 6 = Sat
+      const hour = now.getHours();
+
+      if (day >= 1 && day <= 6 && hour >= 8 && hour < 18) {
+        statusElement.innerHTML = `
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 status-pulse"></span>
+          <span class="text-sm font-bold text-white">OPEN NOW • Closes at 6:00 PM</span>
+        `;
+      } else {
+        statusElement.innerHTML = `
+          <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+          <span class="text-sm font-bold text-white">CLOSED NOW • Opens 8:00 AM</span>
+        `;
+      }
+    }
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileMenuBtn && mobileDrawer) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileDrawer.classList.contains('hidden');
+        if (isHidden) {
+          mobileDrawer.classList.remove('hidden');
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-xmark');
+        } else {
+          mobileDrawer.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        }
+      });
+
+      // Close mobile menu when clicking nav link
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.add('hidden');
+          menuIcon.classList.remove('fa-xmark');
+          menuIcon.classList.add('fa-bars');
+        });
+      });
+    }
+
+    // Modal Details Logic
+    let currentModalService = "";
+
+    function openServiceDetail(title, description) {
+      currentModalService = title;
+      document.getElementById('modalServiceTitle').innerText = title;
+      document.getElementById('modalServiceDescription').innerText = description;
+      document.getElementById('serviceModal').classList.remove('hidden');
+    }
+
+    function closeServiceModal() {
+      document.getElementById('serviceModal').classList.add('hidden');
+    }
+
+    function selectServiceAndBook() {
+      closeServiceModal();
+      const select = document.getElementById('serviceSelect');
+      if (select && currentModalService) {
+        select.value = currentModalService;
+      }
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openBookingModal() {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Form Submission Handler
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const toast = document.getElementById('toast');
+      toast.classList.remove('hidden');
+
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+
+      event.target.reset();
+    }
+
+    // Scroll Reveal Observer
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, observerOptions);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateShopStatus();
+      
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      revealElements.forEach(el => revealObserver.observe(el));
+    });
+  </script>
+</body>
+</html>
